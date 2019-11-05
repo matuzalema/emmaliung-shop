@@ -1,0 +1,71 @@
+@import "../../sass/components";
+@import "../../sass/variables";
+
+.cart-product-wrapper {
+    display: flex;
+    flex-direction: row;
+    color: $dark-color;
+    margin: 20px 0;
+    border-bottom: 1px solid $third-color;
+    padding: 20px 0;
+}
+
+.cart-product-wrapper-letf {
+    padding: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cart-img {
+        width: 100px;
+    }
+}
+
+.cart-product-wrapper-right {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .cart-product-names {
+        min-width: 100%;
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+
+    .cart-product-description {
+        line-height: 30px;
+        max-width: 700px;
+    }
+
+    .cart-product-price {
+        font-weight: 600;
+        font-size: 20px;
+        min-width: 120px;
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    .cart-quantity {
+        min-width: 180px;
+    }
+
+    .button-quantity {
+        margin: 0 5px;
+    }
+}
+
+.emptyCart{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -20px;
+    
+    .button-continue-shopping {
+       margin-top: 40px;
+       font-size: 16px;
+    }
+}

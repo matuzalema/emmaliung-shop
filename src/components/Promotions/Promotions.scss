@@ -1,0 +1,53 @@
+.promotions {
+    position: relative;
+    .jumbotron {
+        background-color: #fff;
+        // animation: change-colors 5s infinite;
+        // background: rgb(251,4,4);
+        // background: linear-gradient(90deg, rgba(251,4,4,1) 0%, rgba(242,206,83,0.96656162464986) 51%, rgba(247,2,2,1) 100%);
+    }
+
+    width: 80%;
+    margin: 0 auto;
+    // min-height: 80vh; 
+    // background-image: url(../../images/dron-promotion.jpg);
+  
+    .promotions-header {
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 60px;
+        position: relative;
+        z-index: 1;
+        // animation: puls 2s infinite;
+    }
+
+    .promotion-desc {
+        text-align: center;
+         position: relative;
+        z-index: 1;
+        margin-top: 20px;
+    }
+
+    .promotions-span {
+        font-size: 64px;
+        color: red;
+        animation: puls 5s infinite;
+    }
+
+    .promotions-top {
+        font-size: 24px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        font-weight: 700;
+    }
+}
+
+.promotion-carousel {
+    position: absolute;
+    top: 0;
+    left: -40px;
+}

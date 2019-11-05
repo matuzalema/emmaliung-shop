@@ -1,0 +1,106 @@
+.footer {
+	background-color:#000;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 40px;
+	align-items: center;
+  height: 60px;
+  
+	.bottomNav {
+		display: flex;
+		justify-content: flex-end;
+		background-color:#000;
+    padding-right: 40px;
+    
+		a {
+			text-decoration: none;
+			margin-left: 20px;
+			color: white;
+			text-transform: uppercase;
+      font-size: 12px;
+      
+			&:hover {
+				color: red;
+			}
+		}
+	}
+}
+
+.bottomNav a:visited {
+  color:#fff;
+}
+
+.bottomNav a.active {
+  color: red;
+}
+
+.social {
+  width: 100%;
+  .fab {
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+.fa-facebook {
+  background: #3B5998;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin-left: 40px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin-left: 10px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin-left: 10px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin-left: 10px;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin-left: 10px;
+}

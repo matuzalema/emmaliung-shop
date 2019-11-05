@@ -1,0 +1,10 @@
+    @import "../../sass/variables";
+    
+    .row {
+        justify-content: center;
+    }
+
+    .feedback .form-control:focus {
+        border-color: $btn-hover-light;
+        box-shadow: none;
+    }

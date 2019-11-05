@@ -1,0 +1,45 @@
+@import "../../../sass/variables";
+@import "../../../sass/components";
+
+.product-wrapper {
+    display: flex;
+    flex-direction: row;
+    color: $dark-color;
+    max-width: 90%;
+    margin-top: -20px;
+}
+
+.product-wrapper-letf {
+    padding: 100px;
+    background-color:#fff;
+}
+
+.product-wrapper-right {
+    margin-left: 50px;
+    margin-top: 30px;
+    
+    .product-names {
+        text-align: center;
+        min-width: 100%;
+        text-transform: capitalize;
+        margin: 20px 0;
+    }
+
+    .product-description {
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .product-inf {
+        color: red;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .product-price {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+

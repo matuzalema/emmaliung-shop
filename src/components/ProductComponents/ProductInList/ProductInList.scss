@@ -1,0 +1,62 @@
+@import "../../../sass/variables";
+
+.product {
+  background-color: #fff;
+  border: 1px solid $fourth-color;
+  width: 368px;
+  height: 500px;
+  padding: 30px;
+  margin: 0 20px 30px 20px;
+  position: relative;
+
+  &:hover {
+    animation: scale 2s;
+  }
+
+  .productImg {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 70px;
+  }
+
+  .productName {
+    position: absolute;
+    bottom: 100px;
+    font-size: 18px;
+  }
+
+  .productPrice {
+    position: absolute;
+    bottom: 68px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .productInf {
+    position: absolute;
+    top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    color: red;
+  }
+
+  .button.button-product-list{
+    position: absolute;
+    bottom: 25px;
+    background-color: #000;
+    color: #fff;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  
+  .button-more {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    padding: 9px 21px;
+  }
+}

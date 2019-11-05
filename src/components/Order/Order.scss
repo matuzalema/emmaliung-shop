@@ -1,0 +1,47 @@
+@import "../../sass/variables";
+@import "../../sass/components";
+
+.order {
+    margin: -30px auto 0;
+    display: table;
+    min-height: 80vh;
+
+    .order-header {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .order-table {
+        border-collapse: collapse;
+
+        .order-tr, .order-td, .order-th {
+            border-bottom: 1px solid rgb(205, 211, 205);
+            padding: 20px 50px;
+        }
+
+        .order-th {
+            background-color: $second-color;
+        }
+    }
+
+    .sum {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .button.button-primary.pay {
+        display: block;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .button-back {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}

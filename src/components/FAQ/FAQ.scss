@@ -1,0 +1,51 @@
+@import "../../sass/variables";
+
+.faq {
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 80vh;
+    margin-top: -20px;
+
+    .faq-header{
+        font-size: 24px;
+    }
+
+    .button-faq {
+        width: 100%;
+    }
+
+    .card-header {
+        background-color:$btn-hover-dark;
+        margin-top: 20px;
+        padding: 0;
+
+        &:hover{
+            background-color: $btn-hover-light;
+            color: #fff;
+        }
+    }
+
+    .card {
+        border: none;
+    }
+}
+
+.btn.btn-link {
+    color: #fff;
+    background-color: $btn-hover-dark;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #4e4e4e;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+}

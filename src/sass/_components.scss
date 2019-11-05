@@ -1,0 +1,102 @@
+@import "./variables.scss";
+
+.button{
+    padding: 8px 20px;
+    background-color: $third-color;
+    border: none;
+    border-radius: 3px;
+    color: #000;
+    min-width: 50px;
+    min-height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: #000;
+         background-color:$btn-hover-light;
+    }
+}
+
+.button-sort {
+    background-color: inherit;
+    width: 220px;
+    margin-left: -35px;
+    text-align: left;
+    padding: 5px 0 30px 40px;
+    border: none;
+    margin-bottom: 8px;
+    height: 25px;
+
+    &:hover {
+        background-color: $fourth-color;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.button.button-primary {
+    margin-right: 20px;
+    background-color: $dark-color;
+    color: $main-color;
+    padding: 8px 20px;
+    border: none;
+    transition: 1s;
+
+    &:hover {
+        background-color:$btn-hover-dark;
+        color: $main-color;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+    
+    &:active {
+        background-color: #000;
+    }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+   50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: acale(1);
+  }
+}
+
+@keyframes puls {
+  0% {
+    font-size: 38px;
+  }
+   50% {
+    font-size: 44px;
+  }
+  100% {
+    font-size: 38px;
+  }
+}
+
+@keyframes change-colors {
+  0% {
+    background-color: #ff9d0a;
+  }
+   50% {
+    background-color: #e1b12c;
+  }
+  100% {
+    background-color: #ff9d0a;
+  }
+}
