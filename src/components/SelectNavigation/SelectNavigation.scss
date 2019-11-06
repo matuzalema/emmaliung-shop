@@ -1,0 +1,31 @@
+@import '../../sass/variables';
+
+.select-category {
+    width: 80%;
+    background-color: $second-color;
+    margin-left: 20%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 50px;
+
+    &::after {
+        content: '';
+        height: 7px;
+        background-color: $dark-color;
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        left: 0;
+        border-top: 1px solid $main-color;
+    }
+
+    .category-btn {
+        background-color: transparent;
+        color: $third-color;
+        margin-left: 15px;
+        text-transform: uppercase;
+    }
+}

@@ -11,8 +11,10 @@ class Navigation extends React.Component {
     return (
     <div className="top">
       <nav className="topNav">
-        <NavLink exact to="/" activeClassName="active">Home</NavLink>
-        <NavLink exact to="/FAQ" activeClassName="active">FAQ</NavLink>
+        <NavLink exact to="/" activeClassName="active">O mnie</NavLink>
+        <NavLink exact to="/Emmaliunga" activeClassName="active">Emmaliunga</NavLink>
+
+        {/* <NavLink exact to="/FAQ" activeClassName="active">FAQ</NavLink> */}
         <NavLink exact to="/Promotions" activeClassName="active">Promocje</NavLink>
         <NavLink exact to="/Contact" activeClassName="active">Kontakt</NavLink>
         <div className="cart-wrapper">

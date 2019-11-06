@@ -6,6 +6,9 @@ import "./Layout.scss";
 
 //import components
 import Header  from "../Header/Header.js";
+import Navigation from "../Navigation/Navigation.js";
+import SelectNavigation from "../SelectNavigation/SelectNavigation.js";
+
 import { Footer } from "../Footer/Footer";
 
 class Layout extends React.Component {
@@ -13,8 +16,15 @@ class Layout extends React.Component {
   render() {
     return (
       <div className="container-fluid">
+        {/* <Header cartProductsQuantity={this.props.cartProductsQuantity} /> */}
         <div className='top-nav'>
-          <p className="top-nav-item">
+          <Navigation />
+          <header className="header">
+            <img className="logo" src='../../images/logoText.png' alt=""/>
+            <h1 className="logo-header"> Emmaliunga</h1>
+            </header>
+          <SelectNavigation />
+          {/* <p className="top-nav-item">
             <Link to={"/log"} >
               <i className="material-icons top-nav-icon">perm_identity</i>
               Zaloguj się
@@ -31,9 +41,8 @@ class Layout extends React.Component {
             <i className="material-icons top-nav-icon">contact_mail</i>
               Feedback 
             </Link>
-          </p>
+          </p> */}
         </div>
-        <Header cartProductsQuantity={this.props.cartProductsQuantity}/>
         {this.props.children}
         <Footer />
       </div>

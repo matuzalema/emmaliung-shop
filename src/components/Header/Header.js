@@ -8,20 +8,11 @@ import "./Header.scss";
 import Navigation from "../Navigation/Navigation";
 
 const Header = () => (
-  <div className="top">
-    <Link to={"/home"} className="logo-link">
-    <div className="logo">
-      <div className="logo-wrapper">
-        <h1 className="logo-header">Ph&nbsp;&nbsp;&nbsp;</h1>
-        <i className="material-icons logo-icon">
-          photo_camera
-        </i><h1 className="logo-header">to</h1>
-      </div>
-      <h1 className="logo-header-second">inventions</h1>
-    </div>
-    </Link>
+  // <div className="top">
+  // <header>
     <Navigation />
-  </div>
+    // <div class="jumbotron">dddddddd</div>
+  // </header>
 );
 
 export default Header;
