@@ -16,7 +16,7 @@ nav  {
             border: 0.3px solid $third-color;
 
             &.active .page-link{
-                background-color: #000;
+                background-color: $dark-color;
             }
 
             .page-link:focus {

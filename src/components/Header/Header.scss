@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Literata:600,700|Orbitron:400,700,900&display=swap');
 
 .top {
-	// display: flex;
-	// flex-direction: row;
-	// justify-content: space-between;
-	// padding: 0 30px;
-	// margin-top: 10px;
-	// margin-bottom: 40px;
 
 	.logo {
 		display: flex;
@@ -24,21 +18,21 @@
 			flex-direction: row;
 			position: relative;
 
-			.logo-header {
-				font-size: 24px;
-				font-weight: 900;
-				flex:1;
-				padding-top: 16px;
-				letter-spacing: 6px;
-				font-family: 'Orbitron', sans-serif;
-				color: red;
-			}
+			// .logo-header {
+			// 	font-size: 24px;
+			// 	font-weight: 900;
+			// 	flex:1;
+			// 	padding-top: 16px;
+			// 	letter-spacing: 6px;
+			// 	font-family: 'Orbitron', sans-serif;
+			// 	color: red;
+			// }
 
-			.logo-icon {
-				position: absolute;
-				top: 9px;
-    			left: 46px;
-			}
+			// .logo-icon {
+			// 	position: absolute;
+			// 	top: 9px;
+    		// 	left: 46px;
+			// }
 		}
 
 		.logo-header-second {

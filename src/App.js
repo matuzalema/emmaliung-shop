@@ -19,7 +19,7 @@ import Log from './components/Log/Log';
 import Feedback from './components/Feedback/Feedback';
 import Newsletter from './components/Newsletter/Newsletter';
 import Register from './components/Register/Register';
-import Emmaliunga from './components/Emmaliunga/Emmaliunga';
+// import Emmaliunga from './components/Emmaliunga/';
 import { NoMatch } from './components/NoMatch';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -37,7 +37,7 @@ class App extends React.Component {
           >
             <Route exact path={'/'} component={Home} />
             <Route exact path={'/home'} component={Home} />
-            <Route exact path={'/emmaliunga'} component={Emmaliunga} />
+            {/* <Route exact path={'/emmaliunga'} component={Emmaliunga} /> */}
             <Route exact path={'/contact'} component={Contact} />
             <Route exact path={'/FAQ'} component={FAQ} />
             <Route exact path={'/promotions'} component={Promotions} />

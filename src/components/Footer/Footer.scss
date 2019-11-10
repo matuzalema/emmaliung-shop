@@ -1,5 +1,7 @@
+@import "../../sass/variables";
+
 .footer {
-	background-color:#000;
+	background-color:$dark-color;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
@@ -11,7 +13,7 @@
 	.bottomNav {
 		display: flex;
 		justify-content: flex-end;
-		background-color:#000;
+		background-color:$dark-color;
     padding-right: 40px;
     
 		a {

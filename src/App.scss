@@ -1,18 +1,40 @@
-
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Play:400,700&display=swap&subset=latin-ext');@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Play', sans-serif;
+    
+    // font-family: 'Roboto Condensed', sans-serif;
 
     &:focus {
         outline:none;
     }
 }
 
+html {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    // font-family: 'Big Shoulders Display', cursive;
+    // font-family: 'Roboto Condensed', sans-serif;
+
+}
+
 body {
     padding: 5px;
+    
+    
+    // font-size: 24px;
 
     button {
         border: none;
+        background-color: transparent;
+        // font-family: 'Big Shoulders Display', cursive;
+        &:focus {
+            outline: none;
+        }
     }
 }

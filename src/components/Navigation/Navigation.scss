@@ -3,7 +3,7 @@
 .topNav {
 	display: flex;
 	justify-content: flex-end;
-	padding-right: 30px;
+	padding-right: 4%;
 	height: 60px;
 	background-color: $second-color;
 	width: 100%;
@@ -26,13 +26,12 @@
 		margin-left: 25px;
 		color: $main-color;
 		text-transform: uppercase;
-		letter-spacing: 6px;
-		font-size: 14px;
+		font-size: 0.8rem;
 		line-height: 60px;
+		transition: 0.75s;
 
 		&:hover {
 		text-decoration: none;
-		color: $dark-color;
 		}
 	}
 }
@@ -42,31 +41,32 @@
 }
 
 .topNav a.active {
-  color: $dark-color;
-  border: none;
+  color: $main-color;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
 }
 
 .cart-wrapper {
 	position: relative;
 
 	.cart-icon {
-		margin-left: -25px;
-		margin-top: -10px;
+		margin-left: -20px;
+		margin-top: 8px;
 		padding: 10px;
 	}
 	
 	.cart-quantity {
-		color: #000;
-		min-height: 20px;
-		min-width: 20px;
-		line-height: 20px;
+		color: $dark-color;
+		min-height: 15px;
+		min-width: 15px;
+		line-height: 15px;
 		text-align: center;
 		border-radius: 50%;
 		font-size: 10px;
     	letter-spacing: 0;
-		background-color: $second-color;
+		background-color: $main-color;
 		position: absolute;
-		top: 4px;
-		right: 0px;
+		top: 12px;
+		right: 3px;
 	}
 }

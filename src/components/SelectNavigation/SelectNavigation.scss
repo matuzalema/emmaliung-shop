@@ -1,12 +1,12 @@
 @import '../../sass/variables';
 
 .select-category {
-    width: 80%;
+    // width: 80%;
     background-color: $second-color;
-    margin-left: 20%;
+    margin-left: 290px;
     display: flex;
     justify-content: flex-end;
-    padding-right: 60px;
+    padding-right: 7%;
     height: 40px;
     position: relative;
     margin-bottom: 50px;
@@ -24,8 +24,10 @@
 
     .category-btn {
         background-color: transparent;
-        color: $third-color;
-        margin-left: 15px;
+        color: $main-color;
+        margin-left: 5%;
         text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
     }
 }

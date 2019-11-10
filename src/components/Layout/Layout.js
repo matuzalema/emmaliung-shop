@@ -21,9 +21,10 @@ class Layout extends React.Component {
           <Navigation />
           <header className="header">
             <img className="logo" src='../../images/logoText.png' alt=""/>
-            <h1 className="logo-header"> Emmaliunga</h1>
+            <img className="header-text" src='../../images/Emmaljunga.png' alt="" />
+
             </header>
-          <SelectNavigation />
+          {/* <SelectNavigation /> */}
           {/* <p className="top-nav-item">
             <Link to={"/log"} >
               <i className="material-icons top-nav-icon">perm_identity</i>

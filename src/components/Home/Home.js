@@ -9,6 +9,7 @@ import "../Pagination/Pagination.scss"
 
 //import components
 import {ProductsList} from "../ProductComponents/ProductList/ProductsList";
+import SelectNavigation from "../SelectNavigation/SelectNavigation";
 
 class Home extends React.Component {
   constructor(props) {
@@ -38,6 +39,15 @@ class Home extends React.Component {
     }); 
   }
 
+  filterByProductGroup(productGroup) {
+    let productsAfterFilterByProductGroup;
+    productsAfterFilterByProductGroup = this.props.products.filter(product => product.productGroup === productGroup);
+    this.setState({
+      sortedProducts: cloneDeep(productsAfterFilterByProductGroup),
+      selectedPage: 1,
+      productsToDisplay: productsAfterFilterByProductGroup.slice((this.pageSize) - this.pageSize, (this.pageSize))
+    });
+  }
 
   sortByKey(key) {
     let direction;
@@ -77,23 +87,58 @@ class Home extends React.Component {
     })
   }
   
+  toggleVisibleElement(e){
+    
+    const leftNavBtn = document.querySelectorAll('.left-nav-btn');
+    leftNavBtn.forEach(element => {
+      element.addEventListener('click', (event) => {
+        event.stopPropagation();
+        // event.preventDefault();
+        element.nextSibling.classList.toggle('hide');
+      })
+    });
+  }
   render() {
     return (
       <div>
+        <div className='select-category'>
+          <button className="category-btn" onClick={() => this.filterByCategory("wozki")}>Wózki</button>
+          <button className="category-btn" onClick={() => this.filterByCategory("foteliki")}>Foteliki</button>
+          <button className="category-btn" onClick={() => this.filterByCategory("akcesoria")}>Akcesoria</button>
+          <button className="category-btn" onClick={() => this.filterByCategory("all")}>Wszystkie</button>
+        </div>  
         <div className="homeContainer">
           <div className="wrapperHomeLeft">
-            <p className="sort-by"> Sortuj </p>
-              <button className="button-sort" onClick={() => this.sortByKey("name")}>Sort by name</button>
-              <button className="button-sort" onClick={() => this.sortByKey("price")}>Sort by price</button>
-            <p className="sort-by"> Kategorie </p>
-            <button className="button-sort" onClick={() => this.filterByCategory("all")}>Wszystkie</button>
-            <button className="button-sort" onClick={() => this.filterByCategory("aparaty fotograficzne")}>Aparaty fotograficzne</button>
-            <button className="button-sort" onClick={() => this.filterByCategory("drony")}>Drony</button>
-            <button className="button-sort" onClick={() => this.filterByCategory("glowice")}>Głowice</button>
-            <button className="button-sort" onClick={() => this.filterByCategory("mikrofony")}>Mikrofony</button>
-            <button className="button-sort" onClick={() => this.filterByCategory("karty pamieci")}>Nośniki pamięci</button>
-          </div> 
+            <ul>
+              <li><button className='left-nav-btn' typle="button" onClick={(e) => this.toggleVisibleElement(e)}>Wózki</button>
+                <ul className="left-nav-btn-nested">
+                  <li onClick={() => this.filterByProductGroup("wozekMondial")}><button className="left-nav-btn-nested">Mondial</button></li>
+                  <li onClick={() => this.filterByProductGroup("wozekEdge")}><button className="left-nav-btn-nested">Edge</button></li>
+                  <li onClick={() => this.filterByProductGroup("wozekNXT")}><button className="left-nav-btn-nested">NXT</button></li>
+                  <li onClick={() => this.filterByProductGroup("wozekViking")}><button className="left-nav-btn-nested">Viking</button></li>
+                </ul>
+              </li>
+              <li><button className='left-nav-btn' typle="button" onClick={(e) => this.toggleVisibleElement(e)}>Spacerówki</button>
+                <ul className="left-nav-btn-nested hide">
+                  <li onClick={() => this.filterByProductGroup("SpacerowkaMondial")}><button className="left-nav-btn-nested">Mondial</button></li>
+                  <li onClick={() => this.filterByProductGroup("Edge")}><button className="left-nav-btn-nested">Edge</button></li>
+                  <li onClick={() => this.filterByProductGroup("NXT")}><button className="left-nav-btn-nested">NXT</button></li>
+                </ul>
+              </li>
+              <li><button className='left-nav-btn' typle="button" onClick={(e) => this.toggleVisibleElement(e)}>Foteliki</button>
+                <ul className="left-nav-btn-nested hide">
+                  <li onClick={() => this.filterByProductGroup("Lionelo")}><button className="left-nav-btn-nested">Lionelo</button></li>
+                  <li onClick={() => this.filterByProductGroup("Graco")}><button className="left-nav-btn-nested">Graco</button></li>
+                  <li onClick={() => this.filterByProductGroup("Maxi-Cosi")}><button className="left-nav-btn-nested">Maxi-Cosi</button></li>
+                </ul>
+              </li>
+            </ul>
+              <button className="button-sort" onClick={() => this.sortByKey("name")}>Sortuj wg nazwy</button>
+              <button className="button-sort" onClick={() => this.sortByKey("price")}>Sortuj wg ceny</button>
+          </div>
+          
           <ProductsList products={this.state.productsToDisplay}/>
+          {/* <SelectNavigation /> */}
         </div>
         <div className="container-fluid">
           <Pagination className="pagination-bottom"

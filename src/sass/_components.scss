@@ -25,17 +25,12 @@
 }
 
 .button-sort {
-    background-color: inherit;
-    width: 220px;
-    margin-left: -35px;
+    width: 150px;
     text-align: left;
-    padding: 5px 0 30px 40px;
-    border: none;
-    margin-bottom: 8px;
-    height: 25px;
+    margin: 5px 0;
 
     &:hover {
-        background-color: $fourth-color;
+        border-bottom: 1px solid $dark-color;
     }
 
     &:focus {

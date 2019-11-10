@@ -1,26 +1,40 @@
 @import "../../sass/variables";
+.hide {
+  display: none;
+}
 
 .homeContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 
   .wrapperHomeLeft {
     display: flex;
     flex-direction: column;
-    background-color:$second-color;
-    margin-left: 40px;
+    margin: 0 20px 0 40px;
     padding-left: 35px;
-    width: 230px;
+
+    .left-nav-btn {
+      text-transform: uppercase;
+      margin: 5px 0;
+      font-weight: bold;
+      color: $dark-color;
+    }
+
+    .left-nav-btn-nested {
+        margin-left: 50px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+        
+        li .left-nav-btn-nested:hover {
+          cursor: pointer;
+          border-bottom: 1.5px solid $dark-color;
+          width: inherit;
+        }
+    }
 
     h1 {
       font-size: 24px;
       font-weight: 400;
-    }
-
-    .sort-by {
-      font-weight: 600;
-      margin: 20px 0 10px 0;
     }
   }
 

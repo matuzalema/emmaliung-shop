@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 @import "../../sass/variables";
 
 .container {
@@ -46,19 +46,30 @@
 
 div .container-fluid {
 	padding: 0;
+	background: rgb(170,70,142);
+background: linear-gradient(90deg, rgba(170,70,142, 0.4) 0%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 98%, rgba(170,70,142,0.4) 100%);
+	
 }
 
 .header {
-	height: 300px;
+	height: 200px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	position: relative;
 	
 	.logo{
-		// display: inline;
+		min-width: 100px;
+		height: auto;
+		position: absolute;
+		left: 50px;
+
 	}
 
-	.logo-header {
-		// display: inline;
+	.header-text {
+		min-width: 100px;
+		height: auto;
+		position: absolute;
+		right: 10%;
 	}
 }
