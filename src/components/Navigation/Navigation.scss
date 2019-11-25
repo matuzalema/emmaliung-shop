@@ -3,12 +3,14 @@
 .topNav {
 	display: flex;
 	justify-content: flex-end;
-	padding-right: 4%;
-	height: 60px;
+	// align-items: center;
+	padding-right: 70px;
+	height: 45px;
 	background-color: $second-color;
-	width: 100%;
+	width: 104%;
 	position: relative;
 	top: 16px;
+	left: -2%;
 
 	&::before {
 		content: "";
@@ -27,7 +29,7 @@
 		color: $main-color;
 		text-transform: uppercase;
 		font-size: 0.8rem;
-		line-height: 60px;
+		line-height: 45px;
 		transition: 0.75s;
 
 		&:hover {
@@ -50,8 +52,8 @@
 	position: relative;
 
 	.cart-icon {
-		margin-left: -20px;
-		margin-top: 8px;
+		margin-left: -18px;
+		margin-top: 2px;
 		padding: 10px;
 	}
 	
@@ -66,7 +68,7 @@
     	letter-spacing: 0;
 		background-color: $main-color;
 		position: absolute;
-		top: 12px;
+		top: 9px;
 		right: 3px;
 	}
 }

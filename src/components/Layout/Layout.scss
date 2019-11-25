@@ -45,14 +45,14 @@
 }
 
 div .container-fluid {
-	padding: 0;
+	padding: 0 2%;
 	background: rgb(170,70,142);
 background: linear-gradient(90deg, rgba(170,70,142, 0.4) 0%, rgba(255,255,255,1) 2%, rgba(255,255,255,1) 98%, rgba(170,70,142,0.4) 100%);
 	
 }
 
 .header {
-	height: 200px;
+	height: 170px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -70,6 +70,7 @@ background: linear-gradient(90deg, rgba(170,70,142, 0.4) 0%, rgba(255,255,255,1)
 		min-width: 100px;
 		height: auto;
 		position: absolute;
-		right: 10%;
+		right:89px;
+		top: 47px;
 	}
 }

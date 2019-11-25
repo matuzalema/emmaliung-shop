@@ -1,6 +1,7 @@
+@import '../../../sass/variables';
 .product {
   background-color: #f2f2f2;
-  width: 400px;
+  width: 345px;
   height: 500px;
   padding: 30px;
   margin: 0 20px 30px 20px;
@@ -10,7 +11,6 @@
     text-align: center;
     margin: 0 auto;
     display: block;
-    margin-top: 100px;
   }
 
   .productName {
@@ -31,8 +31,13 @@
   
   .productInf {
     position: absolute;
-    top: 20px;
-    font-size: 18px;
+    background: #fff;
+    color: $dark-color;
+    transform: rotate(-46deg);
+    width: 80px;
+    text-align: center;
+    top: 60px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.9px;
   } 

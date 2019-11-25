@@ -9,10 +9,10 @@ export class Footer extends React.Component {
 		return (
 			<div className="footer">
 				<nav className="bottomNav">
-					<Link exact to="/" activeClassName="active">Home</Link>
-					<Link exact to="/FAQ" activeClassName="active">FAQ</Link>
-					<Link exact to="/Promotions" activeClassName="active">Promotions</Link>
-					<Link exact to="/Contact" activeClassName="active">Contact</Link>	
+					<Link to="/" >Home</Link>
+					<Link to="/FAQ" >FAQ</Link>
+					<Link to="/Promotions" >Promotions</Link>
+					<Link to="/Contact">Contact</Link>	
 				</nav>	
 				<div className="social">
 					<a href="https://facebook.com"><i className="fab fa-facebook"></i></a>

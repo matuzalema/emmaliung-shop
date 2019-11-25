@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 import "./Carousel.scss";
 
 const MyCarousel = () => (
-    <div class="carousel-wrapper">
+    <div className="carousel-wrapper">
         <Carousel>
             <Carousel.Item>
                 <img

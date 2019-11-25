@@ -2,10 +2,11 @@
 
 .product {
   background-color: #fff;
-  border-left: 1px solid #c7c3bd47;
-  width: 368px;
-  height: 500px;
-  padding: 30px;
+  border-left: 1px solid #6d6d6d47;
+  border-bottom: 1px solid #6d6d6d47;
+  width: 338px;
+  height: 420px;
+  padding: 0 30px 30px;
   margin: 0 20px 30px 20px;
   position: relative;
 
@@ -17,7 +18,6 @@
     text-align: center;
     margin: 0 auto;
     display: block;
-    margin-top: 70px;
   }
 
   .productName {
@@ -35,16 +35,21 @@
 
   .productInf {
     position: absolute;
-    top: 20px;
-    font-size: 18px;
+    top: 19px;
+    left: 28px;
+    line-height: 20px;
+    width: 60px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.9px;
-    color: red;
+    color:#fff;
+    background-color: red;
   }
 
   .button.button-product-list{
     position: absolute;
     bottom: 25px;
+    right: -14px;
     background-color: $dark-color;
     color: #fff;
     font-size: 0.8rem;
@@ -57,8 +62,9 @@
   .button-more {
     position: absolute;
     bottom: 25px;
-    right: 25px;
+    left: 25px;
     padding: 9px 21px;
     font-size: 0.8rem;
+    background-color: #2125291c;
   }
 }

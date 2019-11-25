@@ -1,7 +1,5 @@
 export default function () {
   return [
-    
-    
     {
       id: 0,
       name: "Emmaliunga",
@@ -9,9 +7,9 @@ export default function () {
       price: 3555.00,
       desc:
         "Rode Stereo VideoMic X jest stereofonicznym mikrofonem  najwyższej jakości (transmisyjnej),przeznaczonym do montażu na kamerach i aparatach. Mikrofon został wyposażony w parę kapsuł pojemnościowych(prawdziwie kondensatorowych), ustawionych w konfiguracji X- Y, zapewniających wysoce immersyjny pejzaż dźwiękowy.",
-      inf: "Sale",
+      inf: "Przecena",
       quantity: 1,
-      detail: "Rode Stereo VideoMic X jest stereofonicznym mikrofonem  najwyższej jakości (transmisyjnej), przeznaczonym do montażu na kamerach i aparatach. W pełni metalowa konstrukcja zapewnia wyjątkową odporność przez mikrofon, co idealnie nadaje się do regularnego, profesjonalnego wykorzystania, pozostając przy tym wyjątkowo odpornym na zakłócenia wywoływane przez fale radiowe. Mikrofon został wyposażony w parę kapsuł pojemnościowych(prawdziwie kondensatorowych), ustawionych w konfiguracji X- Y, zapewniających wysoce immersyjny pejzaż dźwiękowy.Każda z kapsuł jest wspierana przez antywstrząsowy system montażu Rycote Lyre, zapewniający izolację od wibracji a także puknięć i uderzeń. Cyfrowe przełączniki na tylnym panelu SVMX pozwalają użytkownikowi na regulację poziomu(-10 dB lub + 20 dB), filtra górnoprzepustowego(0 / 75 / 150 Hz) oraz innowacyjnego podbicia wysokich częstotliwości(+6 dB przy X Hz), zaprojektowanego w celu poprawy zrozumiałości dialogów.",
+      detail: "Sprzedam przepiękny ekskluzywny wózek 4w1 Emmaljunga Mondial De Luxe 4w1. Zestaw z pełnym wyposażeniem (ma praktycznie wszystkie możliwe dodatki) oraz z bezpiecznym i rozkładanym do pozycji leżącej fotelikiem Kiddy evoluna fix (także podczas jazdy samochodem) oraz bazą samochodową Kiddy na isofix, która znacząco zwiększa bezpieczeństwo oraz ułatwia montaż fotelika w samochodzie. Cały zestaw bardzo zadbany, na żywo prezentuje się ślicznie. Generalnie wózek nie różni się wiele od nowego w sklepie. Naprawdę, nie często spotyka się tak zadbane wózki! Koszt takiego nowego zestawu sięga 9000 zł! Z racji tego, że wózek był używany niewiele i jest bardzo zadbany, proponuję cenę 4500zł.Posiadam więcej szczegółowych zdjęć wózka(zainteresowanym prześlę na maila). W skład sprzedawanego zestawu wchodzi: podwozie wózka Mondial De Luxe podwozie wózka Mondial De Luxe gondola(duże wymiary wewnątrz), spacerówka, budka do gondolki i spacerówki, oryginalne nakrycie na gondolkę, oryginalne nakrycie na spacerówkę, wbudowana moskitiera w budce, wbudowany dodatkowy daszek w budce, tzw przedłużenie, oryginalna torba Emmaljunga Exlusive w kolorze wózka.",
       category: "wozki",
       productGroup: "Rode",
       addInf: "Rode Stereo VideoMic X Jako pierwszy mikrofon z serii VideoMic w uzupełnieniu do ekranowanego kabla stereo 3, 5 mm, został wyposażony w profesjonalne wyjście symetryczne, umieszczone z boku obudowy. Konstrukcja zewnętrznej kopuły chroni delikatne kapsuły przed uszkodzeniami, redukując jednocześnie szum wiatru w taki sam sposób, jak zdobywca nagrody RedDot - RØDE Blimp."
@@ -53,7 +51,7 @@ export default function () {
       price: 2059.00,
       desc:
         "LUMIX LX100 należy do najwyższej klasy aparatów kompaktowych Panasonic. Dzięki matrycy MOS o wysokiej czułości i wielkości 4/3 cala oraz nowemu procesorowi obrazu Venus Engine aparat LUMIX LX100 oferuje wysoką jakość obrazu niezależnie od warunków.",
-      inf: "Last item",
+      inf: "",
       quantity: 1,
       detail: "Dzięki matrycy MOS o wysokiej czułości i wielkości 4/3 cala oraz nowemu procesorowi obrazu Venus Engine aparat LUMIX LX100 oferuje wysoką jakość obrazu niezależnie od warunków. Duża wielkość matrycy oznacza płytką głębię ostrości na zdjęciach, natomiast doskonały stosunek poziomu sygnału do szumów zapewnia niezwykle skuteczne zmniejszenie zaszumienia na fotografiach robionych przy wysokiej czułości ISO. Świeżo opracowany procesor obrazu Venus Engine stworzony został w oparciu o czterordzeniowy procesor. Oferuje podwyższone parametry pracy oraz przetwarzanie danych z wysoką wydajnością niezbędną dla rejestracji nagrań wideo w jakości 4K. Nowy procesor Venus Engine zawiera także wiele nowych programów redukcji szumów, takich jak Multi Process NR, Random Filter oraz Aperture Filter, które zapewniają naturalnie wyglądające zdjęcia, również podczas fotografowania przy słabym oświetleniu.",
       category: "wozki",
