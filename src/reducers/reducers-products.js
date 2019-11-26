@@ -51,7 +51,7 @@ export default function () {
       price: 2059.00,
       desc:
         "LUMIX LX100 należy do najwyższej klasy aparatów kompaktowych Panasonic. Dzięki matrycy MOS o wysokiej czułości i wielkości 4/3 cala oraz nowemu procesorowi obrazu Venus Engine aparat LUMIX LX100 oferuje wysoką jakość obrazu niezależnie od warunków.",
-      inf: "",
+      inf: "Nowość",
       quantity: 1,
       detail: "Dzięki matrycy MOS o wysokiej czułości i wielkości 4/3 cala oraz nowemu procesorowi obrazu Venus Engine aparat LUMIX LX100 oferuje wysoką jakość obrazu niezależnie od warunków. Duża wielkość matrycy oznacza płytką głębię ostrości na zdjęciach, natomiast doskonały stosunek poziomu sygnału do szumów zapewnia niezwykle skuteczne zmniejszenie zaszumienia na fotografiach robionych przy wysokiej czułości ISO. Świeżo opracowany procesor obrazu Venus Engine stworzony został w oparciu o czterordzeniowy procesor. Oferuje podwyższone parametry pracy oraz przetwarzanie danych z wysoką wydajnością niezbędną dla rejestracji nagrań wideo w jakości 4K. Nowy procesor Venus Engine zawiera także wiele nowych programów redukcji szumów, takich jak Multi Process NR, Random Filter oraz Aperture Filter, które zapewniają naturalnie wyglądające zdjęcia, również podczas fotografowania przy słabym oświetleniu.",
       category: "wozki",

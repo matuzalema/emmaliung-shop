@@ -5,14 +5,10 @@
   border-left: 1px solid #6d6d6d47;
   border-bottom: 1px solid #6d6d6d47;
   width: 338px;
-  height: 420px;
+  height: 380px;
   padding: 0 30px 30px;
   margin: 0 20px 30px 20px;
   position: relative;
-
-  &:hover {
-    animation: scale 2s;
-  }
 
   .productImg {
     text-align: center;
@@ -24,6 +20,7 @@
     position: absolute;
     bottom: 100px;
     font-size: 18px;
+    font-weight: 600;
   }
 
   .productPrice {
@@ -35,15 +32,18 @@
 
   .productInf {
     position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 19px solid transparent;
+    border-bottom: 20px solid #f00;
     top: 19px;
-    left: 28px;
-    line-height: 20px;
-    width: 60px;
+    left: 8px;
     font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.9px;
-    color:#fff;
-    background-color: red;
+    width: 101px;
+    height: 0;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    transform: rotate(-46deg);
   }
 
   .button.button-product-list{
