@@ -6,47 +6,79 @@
     display: flex;
     flex-direction: row;
     color: $dark-color;
-    max-width: 90%;
-    margin-top: -20px;
+    max-width: 100%;
+    // margin-top: -20px;
+
+    .product-wrapper-letf {
+        padding: 115px 40px 0 20px;
+        background-color:#fff;
+
+        .desc-btn {
+            width: 230px;
+            margin: 10px 0;
+            border: 1px solid $second-color;
+            color: $second-color;
+            border-radius: 5px;
+            padding: 2px 0;
+        }
+
+        .desc-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .button.button-primary.desc-btn-card {
+            display: block;
+            margin: 20px auto 0;
+        }
+    }
+
+    .product-wrapper-right {
+        // margin-left: 50px;
+        margin-top: 30px;
+        
+        .product-names {
+            text-align: left;
+            font-size: 1.8rem;
+            min-width: 100%;
+            text-transform: capitalize;
+            font-family: 'Roboto', sans-serif;
+            margin: 20px 0;
+        }
+
+        .product-description {
+            line-height: 30px;
+            margin-bottom: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 0;
+            text-align: justify;
+            margin-top: 40px;
+            width: 98%;
+        }
+        
+        .product-inf {
+            color: red;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .product-price {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
 }
 
-.product-wrapper-letf {
-    padding: 100px;
-    background-color:#fff;
+.image-gallery-slide img {
+    margin-top: 20px;
 }
 
-.product-wrapper-right {
-    margin-left: 50px;
-    margin-top: 30px;
-    
-    .product-names {
-        text-align: left;
-        font-size: 1.8rem;
-        min-width: 100%;
-        text-transform: capitalize;
-        font-family: 'Roboto', sans-serif;
-        margin: 20px 0;
-    }
-
-    .product-description {
-        line-height: 30px;
-        margin-bottom: 30px;
-        font-family: 'Roboto', sans-serif;
-        font-size: 0.8rem;
-        letter-spacing: 0;
-        text-align: justify;
-    }
-    
-    .product-inf {
-        color: red;
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-    .product-price {
-        font-weight: 600;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
+.btn-back {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
 }
-

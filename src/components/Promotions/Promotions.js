@@ -2,7 +2,7 @@ import React from 'react';
 import {Jumbotron} from 'react-bootstrap';
 
 //import styles
-import MyCarousel from "../Carousel/Carousel";
+import MyGallery from "../Carousel/Carousel";
 
 // import styles
 import "./Promotions.scss";
@@ -17,7 +17,7 @@ export class Promotions extends React.Component {
 				<p className="promotion-desc">Oferta dotyczy wybranych produktów w sklepach stacjonarnych i obowiązuje do wyczerpania zapasów. Ceny w sklepie stacjonarnym oraz internetowym mogą się różnić.</p>
 			</Jumbotron>
 			<div className="promotion-carousel">
-				<MyCarousel />
+				<MyGallery />
 			</div>
 		</div>
 	}

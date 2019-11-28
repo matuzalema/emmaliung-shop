@@ -5,6 +5,20 @@ export default function () {
       name: "Emmaliunga",
       img: "../../images/emmaliung1.jpg",
       price: 3555.00,
+      images: [
+        {
+          original: '../../images/emmaliung1.jpg',
+          thumbnail: '../../images/emmaliung1.jpg',
+        },
+        {
+          original: '../../images/emmaliung2.jpg',
+          thumbnail: '../../images/emmaliung2.jpg',
+        },
+        {
+          original: '../../images/emmaliung3.jpg',
+          thumbnail: '../../images/emmaliung3.jpg',
+        },
+      ],
       desc:
         "Rode Stereo VideoMic X jest stereofonicznym mikrofonem  najwyższej jakości (transmisyjnej),przeznaczonym do montażu na kamerach i aparatach. Mikrofon został wyposażony w parę kapsuł pojemnościowych(prawdziwie kondensatorowych), ustawionych w konfiguracji X- Y, zapewniających wysoce immersyjny pejzaż dźwiękowy.",
       inf: "Przecena",
@@ -19,6 +33,20 @@ export default function () {
       name: "Emmaliunga",
       img: "../../images/emmaliung2.jpg",
       price: 1145.00,
+      images: [
+        {
+          original: '../../images/emmaliung1.jpg',
+          thumbnail: '../../images/emmaliung1.jpg',
+        },
+        {
+          original: '../../images/emmaliung2.jpg',
+          thumbnail: '../../images/emmaliung2.jpg',
+        },
+        {
+          original: '../../images/emmaliung3.jpg',
+          thumbnail: '../../images/emmaliung3.jpg',
+        },
+      ],
       desc: "Matryca o wyskoiej rozdzielczości 18mpix. Możliwość uzyskania miękko rozmytego  tła. Filmowanie w full HD. Szybki procesor DIGIC 4+. Ekran LCD o przekątnej 4.8 cm. Szybki procesor DIGIC 4+, ekran LCD o przekątnej 4.8 cm ułatwiający kadrowanie.",
 
       inf: "Sale",
@@ -34,6 +62,20 @@ export default function () {
       name: "Emmaliunga",
       img: "../../images/emmaliung3.jpg",
       price: 359.00,
+      images: [
+        {
+          original: '../../images/emmaliung1.jpg',
+          thumbnail: '../../images/emmaliung1.jpg',
+        },
+        {
+          original: '../../images/emmaliung2.jpg',
+          thumbnail: '../../images/emmaliung2.jpg',
+        },
+        {
+          original: '../../images/emmaliung3.jpg',
+          thumbnail: '../../images/emmaliung3.jpg',
+        },
+      ],
       desc:
         "Lampa Meike 320 jest kompaktową lampą błyskową, (110mm długość, 65mm szerokość, 36mm wysokość) oraz wadze jedynie 150 gramów. Idealnie nadaje się do niewielkich lustrzanek, aparatów bez-lusterkowych (CSC) i kompaktowych.",
       inf: "Sale",
@@ -49,6 +91,20 @@ export default function () {
       name: "Emmaliunga",
       img: "../../images/emmaliung4.jpg",
       price: 2059.00,
+      images: [
+        {
+          original: '../../images/emmaliung1.jpg',
+          thumbnail: '../../images/emmaliung1.jpg',
+        },
+        {
+          original: '../../images/emmaliung2.jpg',
+          thumbnail: '../../images/emmaliung2.jpg',
+        },
+        {
+          original: '../../images/emmaliung3.jpg',
+          thumbnail: '../../images/emmaliung3.jpg',
+        },
+      ],
       desc:
         "LUMIX LX100 należy do najwyższej klasy aparatów kompaktowych Panasonic. Dzięki matrycy MOS o wysokiej czułości i wielkości 4/3 cala oraz nowemu procesorowi obrazu Venus Engine aparat LUMIX LX100 oferuje wysoką jakość obrazu niezależnie od warunków.",
       inf: "Nowość",
@@ -63,6 +119,20 @@ export default function () {
       name: "Emmaliunga",
       img: "../../images/emmaliung5.jpg",
       price: 359.00,
+      images: [
+        {
+          original: '../../images/emmaliung1.jpg',
+          thumbnail: '../../images/emmaliung1.jpg',
+        },
+        {
+          original: '../../images/emmaliung2.jpg',
+          thumbnail: '../../images/emmaliung2.jpg',
+        },
+        {
+          original: '../../images/emmaliung3.jpg',
+          thumbnail: '../../images/emmaliung3.jpg',
+        },
+      ],
       desc:
         "Benro B-0  to precyzyjna głowica kulowa, której powierzchnia została wykonana z najwyższej jakości anodowego aluminium, które zapobiega korozji, zapewniając długie lata korzystania z głowicy.",
       inf: "Sale",
@@ -77,6 +147,20 @@ export default function () {
       name: "Emmaliunga",
       img: "../../images/emmaliung6.jpg",
       price: 2315.00,
+      images: [
+        {
+          original: '../../images/emmaliung1.jpg',
+          thumbnail: '../../images/emmaliung1.jpg',
+        },
+        {
+          original: '../../images/emmaliung2.jpg',
+          thumbnail: '../../images/emmaliung2.jpg',
+        },
+        {
+          original: '../../images/emmaliung3.jpg',
+          thumbnail: '../../images/emmaliung3.jpg',
+        },
+      ],
       desc:
         "Wszechstronna, wydajna lampa błyskowa montowana na aparacie lub poza nim. To pierwsza lampa błyskowa firmy Canon wyposażona we wbudowaną bezprzewodową łączność radiową. Zastępuje ona model Speedlite 580EX II.",
       inf: "Sale",

@@ -18,6 +18,7 @@ class ProductInList extends React.Component {
                     </Link>
                     <h2 className="productName">{this.props.product.name}</h2>
                     <h2 className="productPrice">{this.props.product.price} PLN</h2>
+
                     <Link
                         to={"/product/" + this.props.product.id} >
                         <button type="submit" className="button button-more" >więcej &nbsp;>></button>
