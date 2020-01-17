@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-## Aplikacja [photo-inventions-shop](https://photo-inventions.firebaseapp.com) napisana w React zawiera:
+## Aplikacja [photo-inventions-shop](https://myprojectj-328b7.firebaseapp.com/) napisana w React zawiera:
 
 - dodawanie produktów do koszyka
 - paginacja listy produktów
