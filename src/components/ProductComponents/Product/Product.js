@@ -24,8 +24,10 @@ class Product extends React.Component {
                         <button type="button" className="button desc-btn-card button-primary">Dodaj do koszyka</button>
                     </div>
                     <div className="product-wrapper-right">
-                        <h1 className="product-names">{this.props.products[this.props.match.params.id].name}</h1>
-                        <MyGallery params={this.props.products[this.props.match.params.id].images}/>
+                        {/* <h1 className="product-names">{this.props.products[this.props.match.params.id].name}</h1> */}
+                        <div className='gallery-wrapper'>
+                            <MyGallery params={this.props.products[this.props.match.params.id].images}/>
+                        </div>
                         <p className="product-description">{this.props.products[this.props.match.params.id].detail}</p>
                         <Link to="/home" className="button btn-back"> Wróć </Link>
                     </div>

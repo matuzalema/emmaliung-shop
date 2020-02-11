@@ -1,7 +1,13 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import "../../sass/variables";
 .carousel-wrapper {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     padding-bottom: 20px;
 
 }
+
+.image-gallery-slide img{
+    max-height: 100vh;
+    object-fit: contain;
+} 
