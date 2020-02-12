@@ -4,17 +4,24 @@
     flex-direction: row;
     justify-content: space-around;
 
-    .company {
+    .company-contact {
         font-size: 20px;
         color: red;
+        margin-bottom: 30px;
     }
     .adress-wrapper {
         font-size: 16px;
+        text-transform: uppercase;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         font-weight: 500;
+        .mail {
+            color: blue;
+            text-decoration: underline;
+            margin-top: -50px;
+        }
     }
 }
 
