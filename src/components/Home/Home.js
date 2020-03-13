@@ -22,87 +22,124 @@ class Home extends React.Component {
       direction: "asc",
       lastSortKey: ""
     };
-    // this.handlePaginationSelected = this.handlePaginationSelected.bind(this);
+    this.handlePaginationSelected = this.handlePaginationSelected.bind(this);
   }
 
-  // filterByCategory(category) {
-  //   let productsAfterFilter;
-  //   if(category==='all'){
-  //     productsAfterFilter = this.props.products;
-  //   } else {
-  //     productsAfterFilter = this.props.products.filter(product => product.category === category)
-  //   }
-  //   this.setState({
-  //     sortedProducts: cloneDeep(productsAfterFilter),
-  //     selectedPage: 1,
-  //     productsToDisplay: productsAfterFilter.slice((this.pageSize) - this.pageSize, (this.pageSize))
-  //   }); 
-  // }
+  filterByCategory(category) {
+    let productsAfterFilter;
+    if(category==='all'){
+      productsAfterFilter = this.props.products;
+    } else {
+      productsAfterFilter = this.props.products.filter(product => product.category === category)
+    }
+    this.setState({
+      sortedProducts: cloneDeep(productsAfterFilter),
+      selectedPage: 1,
+      productsToDisplay: productsAfterFilter.slice((this.pageSize) - this.pageSize, (this.pageSize))
+    }); 
+  }
 
-  // filterByProductGroup(productGroup) {
-  //   let productsAfterFilterByProductGroup;
-  //   productsAfterFilterByProductGroup = this.props.products.filter(product => product.productGroup === productGroup);
-  //   this.setState({
-  //     sortedProducts: cloneDeep(productsAfterFilterByProductGroup),
-  //     selectedPage: 1,
-  //     productsToDisplay: productsAfterFilterByProductGroup.slice((this.pageSize) - this.pageSize, (this.pageSize))
-  //   });
-  // }
+  filterByProductGroup(productGroup) {
+    let productsAfterFilterByProductGroup;
+    productsAfterFilterByProductGroup = this.props.products.filter(product => product.productGroup === productGroup);
+    this.setState({
+      sortedProducts: cloneDeep(productsAfterFilterByProductGroup),
+      selectedPage: 1,
+      productsToDisplay: productsAfterFilterByProductGroup.slice((this.pageSize) - this.pageSize, (this.pageSize))
+    });
+  }
 
-  // sortByKey(key) {
-  //   let direction;
-  //   if (key === this.state.lastSortKey){
-  //     direction = this.state.direction === "asc" ? "desc" : "asc"
-  //   } else {
-  //     direction = "asc"
-  //   }
-  //   let productsSorted = this.state.sortedProducts.sort((a, b) => {
-  //     if(isNaN(a[key])){
-  //       if (direction === "asc") {
-  //         return (a[key]).localeCompare(b[key])
-  //       } else {
-  //         return (b[key]).localeCompare(a[key])
-  //       }
-  //     } else {
-  //       if (direction === "asc") {
-  //         return parseFloat(a[key]) - parseFloat(b[key])
-  //       } else {
-  //         return parseFloat(b[key]) - parseFloat(a[key])
-  //       }
-  //     }
-  //   })
-  //   this.setState({
-  //     sortedProducts: productsSorted,
-  //     direction: direction,
-  //     lastSortKey: key,
-  //     selectedPage: 1,
-  //     productsToDisplay: productsSorted.slice((this.pageSize) - this.pageSize, (this.pageSize))
-  //   })
-  // }
+  sortByKey(key) {
+    let direction;
+    if (key === this.state.lastSortKey){
+      direction = this.state.direction === "asc" ? "desc" : "asc"
+    } else {
+      direction = "asc"
+    }
+    let productsSorted = this.state.sortedProducts.sort((a, b) => {
+      if(isNaN(a[key])){
+        if (direction === "asc") {
+          return (a[key]).localeCompare(b[key])
+        } else {
+          return (b[key]).localeCompare(a[key])
+        }
+      } else {
+        if (direction === "asc") {
+          return parseFloat(a[key]) - parseFloat(b[key])
+        } else {
+          return parseFloat(b[key]) - parseFloat(a[key])
+        }
+      }
+    })
+    this.setState({
+      sortedProducts: productsSorted,
+      direction: direction,
+      lastSortKey: key,
+      selectedPage: 1,
+      productsToDisplay: productsSorted.slice((this.pageSize) - this.pageSize, (this.pageSize))
+    })
+  }
 
-  // handlePaginationSelected(selectedPage) {
-  //   this.setState({
-  //     selectedPage: selectedPage,
-  //     productsToDisplay: this.state.sortedProducts.slice((selectedPage * this.pageSize) - this.pageSize, (selectedPage * this.pageSize)) 
-  //   })
-  // }
+  handlePaginationSelected(selectedPage) {
+    this.setState({
+      selectedPage: selectedPage,
+      productsToDisplay: this.state.sortedProducts.slice((selectedPage * this.pageSize) - this.pageSize, (selectedPage * this.pageSize)) 
+    })
+  }
   
-  // toggleVisibleElement(e){
+  toggleVisibleElement(e){
     
-  //   const leftNavBtn = document.querySelectorAll('.left-nav-btn');
-  //   leftNavBtn.forEach(element => {
-  //     element.addEventListener('click', (event) => {
-  //       event.stopPropagation();
-  //       // event.preventDefault();
-  //       element.nextSibling.classList.toggle('hide');
-  //     })
-  //   });
-  // }
+    const leftNavBtn = document.querySelectorAll('.left-nav-btn');
+    leftNavBtn.forEach(element => {
+      element.addEventListener('click', (event) => {
+        event.stopPropagation();
+        // event.preventDefault();
+        element.nextSibling.classList.toggle('hide');
+      })
+    });
+  }
   render() {
     return (
       <div>
-        
+        <div className='select-category'>
+          <button className="category-btn" onClick={() => this.filterByCategory("wozki")}>Wózki</button>
+          <button className="category-btn" onClick={() => this.filterByCategory("foteliki")}>Foteliki</button>
+          <button className="category-btn" onClick={() => this.filterByCategory("akcesoria")}>Akcesoria</button>
+          <button className="category-btn" onClick={() => this.filterByCategory("all")}>Wszystkie</button>
+        </div>  
+        <div className="homeContainer">
+          <div className="wrapperHomeLeft">
+            <ul>
+              <li><button className='left-nav-btn' typle="button" onClick={(e) => this.toggleVisibleElement(e)}>Wózki</button>
+                <ul className="left-nav-btn-nested">
+                  <li onClick={() => this.filterByProductGroup("wozekMondial")}><button className="left-nav-btn-nested">Mondial</button></li>
+                  <li onClick={() => this.filterByProductGroup("wozekEdge")}><button className="left-nav-btn-nested">Edge</button></li>
+                  <li onClick={() => this.filterByProductGroup("wozekNXT")}><button className="left-nav-btn-nested">NXT</button></li>
+                  <li onClick={() => this.filterByProductGroup("wozekViking")}><button className="left-nav-btn-nested">Viking</button></li>
+                </ul>
+              </li>
+              <li><button className='left-nav-btn' typle="button" onClick={(e) => this.toggleVisibleElement(e)}>Spacerówki</button>
+                <ul className="left-nav-btn-nested hide">
+                  <li onClick={() => this.filterByProductGroup("SpacerowkaMondial")}><button className="left-nav-btn-nested">Mondial</button></li>
+                  <li onClick={() => this.filterByProductGroup("Edge")}><button className="left-nav-btn-nested">Edge</button></li>
+                  <li onClick={() => this.filterByProductGroup("NXT")}><button className="left-nav-btn-nested">NXT</button></li>
+                </ul>
+              </li>
+              <li><button className='left-nav-btn' typle="button" onClick={(e) => this.toggleVisibleElement(e)}>Foteliki</button>
+                <ul className="left-nav-btn-nested hide">
+                  <li onClick={() => this.filterByProductGroup("Lionelo")}><button className="left-nav-btn-nested">Lionelo</button></li>
+                  <li onClick={() => this.filterByProductGroup("Graco")}><button className="left-nav-btn-nested">Graco</button></li>
+                  <li onClick={() => this.filterByProductGroup("Maxi-Cosi")}><button className="left-nav-btn-nested">Maxi-Cosi</button></li>
+                </ul>
+              </li>
+            </ul>
+              <button className="button-sort" onClick={() => this.sortByKey("name")}>Sortuj wg nazwy</button>
+              <button className="button-sort" onClick={() => this.sortByKey("price")}>Sortuj wg ceny</button>
+          </div>
+          
           <ProductsList products={this.state.productsToDisplay}/>
+          {/* <SelectNavigation /> */}
+        </div>
         <div className="container-fluid">
           <Pagination className="pagination-bottom"
             totalItems={this.state.sortedProducts.length}
@@ -110,6 +147,8 @@ class Home extends React.Component {
             onSelect={this.handlePaginationSelected}
             activePage={this.state.selectedPage}
           />
+        </div>
+        <div className="carousel">
         </div>
       </div>
     );

@@ -21,9 +21,9 @@ class ProductInList extends React.Component {
 
                     <Link
                         to={"/product/" + this.props.product.id} >
-                        <button type="submit" className="button button-more" >więcej &nbsp;>></button>
+                        <button type="submit" className="button button-product-list" >więcej &nbsp;>></button>
                     </Link>
-                    <button type="submit" className="button button-product-list button-primary" onClick={() => this.props.addToCart(this.props.product)}> dodaj do koszyka </button>
+                    {/*<button type="submit" className="button button-product-list button-primary" onClick={() => this.props.addToCart(this.props.product)}> dodaj do koszyka </button> */}
                 </div>
             </div>
         )

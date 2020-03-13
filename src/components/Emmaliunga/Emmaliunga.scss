@@ -1,8 +1,15 @@
 .emmaliunga {
     min-height: 90vh;
-}
-
-.emmaliunga-text {
-    margin-top: 30px;
-    font-size: 20px;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 290px;
+    }
+    .emmaliunga-header {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    p {
+        width: 80%;
+    }
 }

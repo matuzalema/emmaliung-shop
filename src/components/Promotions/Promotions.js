@@ -10,9 +10,9 @@ import "./Promotions.scss";
 export class Promotions extends React.Component {
 	render(){
 		return <div className="promotions">	
-				<img src="../../images/dron-promotion.jpg" alt=""/>
-				<h1 className="promotions-header">Promocja dnia!!! <br /> <span className="promotions-span">30% taniej </span> <br />na wózek Emmaliunga 20129</h1>
-				<p className="promotion-desc">Każdego dnia promocja na jeden z modeli wózka! <br /> Warto więc regularnie odwiedzać naszą stronę</p>
+			<p className="promotions-top">Kolejne obniżki</p>
+			<h1 className="promotions-header">Wyprzedaż, teraz nawet <br /> <span className="promotions-span">30% taniej </span> <br />Obserwuj przeceny!</h1>
+			<p className="promotion-desc">Oferta dotyczy wybranych modeli</p>
 		</div>
 	}
 }

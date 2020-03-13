@@ -5,9 +5,9 @@
   border-left: 1px solid #6d6d6d47;
   border-bottom: 1px solid #6d6d6d47;
   width: 338px;
-  height: 380px;
-  padding: 0 30px 30px;
-  margin: 0 20px 30px 20px;
+  height: 320px;
+  padding: 0 30px;
+  margin: 0 20px 70px 20px;
   position: relative;
 
   .productImg {
@@ -18,14 +18,14 @@
 
   .productName {
     position: absolute;
-    bottom: 100px;
+    bottom: 44px;
     font-size: 18px;
     font-weight: 600;
   }
 
   .productPrice {
     position: absolute;
-    bottom: 68px;
+    bottom: 14px;
     font-size: 18px;
     font-weight: 500;
   }
@@ -48,8 +48,9 @@
 
   .button.button-product-list{
     position: absolute;
-    bottom: 25px;
-    right: -14px;
+    top: 250px;
+    // bottom: 25px;
+    right: 8px;
     background-color: $dark-color;
     color: #fff;
     font-size: 0.8rem;

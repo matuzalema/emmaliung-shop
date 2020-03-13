@@ -15,13 +15,15 @@ class Navigation extends React.Component {
         <NavLink exact to="/Emmaliunga" activeClassName="active">Emmaliunga</NavLink>
         <NavLink exact to="/Tips" activeClassName="active">Porady</NavLink>
 
+
         {/* <NavLink exact to="/FAQ" activeClassName="active">FAQ</NavLink> */}
         <NavLink exact to="/Promotions" activeClassName="active">Promocje</NavLink>
         <NavLink exact to="/Contact" activeClassName="active">Kontakt</NavLink>
-        <div className="cart-wrapper">
+        {/*<div className="cart-wrapper">
         <NavLink exact to="/Cart" activeClassName="active"><i className="material-icons cart-icon">shopping_cart</i>
               <p className="cart-quantity">{this.props.cartProductsQuantity}</p></NavLink>
         </div>
+    */}
       </nav>
     </div>
     );

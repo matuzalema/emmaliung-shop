@@ -18,7 +18,7 @@ class Product extends React.Component {
                 <div className="product-wrapper">
                     <div className="product-wrapper-letf">
                         <button type="button" className="desc-btn">Zobacz opis</button>
-                        <button type="button" className="desc-btn">Zadzwoń lub napisz do mnie</button>
+                        <Link to="/contact"><button type="button" className="desc-btn">Zadzwoń lub napisz do mnie</button></Link>
                         <button type="button" className="desc-btn">Zapytaj na czacie</button>
                         <h1 className="desc-price">Cena {this.props.products[this.props.match.params.id].price} zł</h1>
                         <button type="button" className="button desc-btn-card button-primary">Dodaj do koszyka</button>
